@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactBookstore/static/css/main.3c76b2b7.css",
-    "main.js": "/reactBookstore/static/js/main.98313643.js",
-    "static/js/787.4ba6415a.chunk.js": "/reactBookstore/static/js/787.4ba6415a.chunk.js",
-    "index.html": "/reactBookstore/index.html",
-    "main.3c76b2b7.css.map": "/reactBookstore/static/css/main.3c76b2b7.css.map",
-    "main.98313643.js.map": "/reactBookstore/static/js/main.98313643.js.map",
-    "787.4ba6415a.chunk.js.map": "/reactBookstore/static/js/787.4ba6415a.chunk.js.map"
+    "main.css": "/react-bookstore/static/css/main.3c76b2b7.css",
+    "main.js": "/react-bookstore/static/js/main.ce47aaa5.js",
+    "static/js/787.4ba6415a.chunk.js": "/react-bookstore/static/js/787.4ba6415a.chunk.js",
+    "index.html": "/react-bookstore/index.html",
+    "main.3c76b2b7.css.map": "/react-bookstore/static/css/main.3c76b2b7.css.map",
+    "main.ce47aaa5.js.map": "/react-bookstore/static/js/main.ce47aaa5.js.map",
+    "787.4ba6415a.chunk.js.map": "/react-bookstore/static/js/787.4ba6415a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c76b2b7.css",
-    "static/js/main.98313643.js"
+    "static/js/main.ce47aaa5.js"
   ]
 }
