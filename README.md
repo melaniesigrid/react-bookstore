@@ -18,10 +18,10 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-Install Node and npm on your computer.
+Install Node and npm using the `npm install` command on your computer.
 ### Setup
-Clone this repository with git clone https://github.com/melaniesigrid/reactBookstore.git in your terminal.
-Navigate to the project directory, and run npm start.
+Clone this repository with `git clone https://github.com/melaniesigrid/reactBookstore.git` in your terminal.
+Navigate to the project directory `cd react-bookstore`, and run `npm start`.
 
 Or, visit my GitHub Pages deployment on [this link](https://melaniesigrid.github.io/react-bookstore)
 ## Author
