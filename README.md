@@ -9,9 +9,21 @@
 
 - React
 
-## Live Demo (Coming soon...)
+## Live Demo 🚀
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://melaniesigrid.github.io/react-bookstore)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+Install Node and npm on your computer.
+### Setup
+Clone this repository with git clone https://github.com/melaniesigrid/reactBookstore.git in your terminal.
+Navigate to the project directory, and run npm start.
+
+Or, visit my GitHub Pages deployment on [this link](https://melaniesigrid.github.io/react-bookstore)
 ## Author
 
 👤 **Melanie Sigrid**

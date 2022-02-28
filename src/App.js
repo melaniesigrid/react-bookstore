@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<BookPage />} />
+        <Route path="/react-bookstore/" element={<BookPage />} />
         <Route path="/Categories/" element={<CategoriesPage />} />
       </Routes>
     </div>

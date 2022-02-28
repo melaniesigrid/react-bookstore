@@ -6,13 +6,13 @@ function Header() {
     <header className="Header">
       <nav className="NavBar">
         <h1 className="Title">
-          <NavLink to="/" rel="noopener noreferrer">
+          <NavLink to="/react-bookstore/" rel="noopener noreferrer">
             Bookstore CMS
           </NavLink>
         </h1>
         <ul>
           <li>
-            <NavLink to="/" rel="noopener noreferrer">
+            <NavLink to="/react-bookstore/" rel="noopener noreferrer">
               Books
             </NavLink>
           </li>
