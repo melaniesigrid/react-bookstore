@@ -8,7 +8,6 @@ const initialState = [];
 
 const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/nn1m1OT9XlDNbvPvpko6/books/';
 
-
 export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
