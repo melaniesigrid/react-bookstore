@@ -5,11 +5,11 @@ import { useDispatch } from 'react-redux';
 import { removeBookApi } from '../redux/books/books';
 
 function BookItem({
-    item_id,
-    title,
-    author,
-    category,
-  }) {
+  item_id,
+  title,
+  author,
+  category,
+}) {
   const dispatch = useDispatch();
   const remove = () => {
     dispatch(removeBookApi(item_id));
