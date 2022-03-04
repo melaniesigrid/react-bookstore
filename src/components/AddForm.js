@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { sendBooksApi } from '../redux/books/books';
 
 function AddForm() {
   const dispatch = useDispatch();
@@ -21,14 +21,15 @@ function AddForm() {
       category,
     };
 
-    dispatch(addBook(newBook));
+    dispatch(sendBooksApi(newBook));
     setTitle('');
     setAuthor('');
   };
 
   return (
     <div>
-      <form className="AddNew">
+      <h3 className="AddNew">Add New Book</h3>
+      <form className="AddForm">
         <label htmlFor="title">
           <input id="title" placeholder="Title" onChange={getTitle} value={title} required />
         </label>
