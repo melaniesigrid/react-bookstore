@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { sendBooksApi } from '../redux/books/books';
@@ -9,35 +9,45 @@ function AddForm() {
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
 
-  const getTitle = (e) => setTitle(e.target.value);
-  const getAuthor = (e) => setAuthor(e.target.value);
-  const getCategory = (e) => setCategory(e.target.value);
+  const getTitle = (e) => {
+    setTitle(e.target.value);
+  };
 
-  const submitBookToStore = (title, author) => {
-    const newBook = {
-      id: uuidv4(),
-      title,
-      author,
-      category,
-    };
+  const getAuthor = (e) => {
+    setAuthor(e.target.value);
+  };
 
-    dispatch(sendBooksApi(newBook));
-    setTitle('');
-    setAuthor('');
+  const getCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
+  const submitBookToStore = () => {
+    if (title && author && category) {
+      const newBook = {
+        item_id: uuidv4(),
+        title,
+        author,
+        category,
+      };
+
+      dispatch(sendBooksApi(newBook));
+      setTitle('');
+      setAuthor('');
+    }
   };
 
   return (
-    <div>
-      <h3 className="AddNew">Add New Book</h3>
-      <form className="AddForm">
+    <>
+      <h3 className="addNew">Add New Book</h3>
+      <form className="addForm">
         <label htmlFor="title">
           <input id="title" placeholder="Title" onChange={getTitle} value={title} required />
         </label>
         <label htmlFor="author">
-          <input id="author" placeholder="Author" onChange={getAuthor} value={author} />
+          <input id="author" placeholder="Author" onChange={getAuthor} value={author} required />
         </label>
         <label htmlFor="genre">
-          <select className="BookSelect" id="genre" onChange={getCategory} value={category} required>
+          <select className="bookSelect" id="genre" onChange={getCategory} value={category} required>
             <option value="Unknown">Genre</option>
             <option value="Action">Action</option>
             <option value="Science-Fiction">Science-Fiction</option>
@@ -45,9 +55,9 @@ function AddForm() {
             <option value="Romance">Romance</option>
           </select>
         </label>
-        <button type="submit" className="Add" onClick={() => submitBookToStore(title, author)}>Add</button>
+        <button type="submit" className="add btn" onClick={() => submitBookToStore()}>Add</button>
       </form>
-    </div>
+    </>
   );
 }
 

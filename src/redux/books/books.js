@@ -4,9 +4,9 @@ const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const GET_BOOK = 'bookStore/books/GET_BOOK';
 
-const initialState = [];
-
 const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/nn1m1OT9XlDNbvPvpko6/books/';
+
+const initialState = [];
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
@@ -64,7 +64,7 @@ const reducer = (state = initialState, action) => {
       return [...state, action.payload];
 
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
 
     case GET_BOOK:
       return action.payload;
