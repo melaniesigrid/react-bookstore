@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   display: flex;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.05);
   height: 100vh;
 }
 
