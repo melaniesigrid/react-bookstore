@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import profileImage from '../img/user.svg';
 
 function Header() {
   return (
@@ -23,6 +24,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <img className="Profile" alt="Profile" src={profileImage} />
     </header>
   );
 }
